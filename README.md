@@ -1,15 +1,15 @@
-Requirements
+Requirements:
 
-Python 3.8+
+  Python 3.8+
 
-Installation
+Installation:
 
-pip install poetry
+  pip install poetry
 
-poetry install
+  poetry install
 
-Running
+Running:
 
-alembic upgrade head
+  alembic upgrade head
 
-uvicorn main:app
+  uvicorn main:app
