@@ -34,7 +34,7 @@ async def post(request):
     try:
         _id = await contacts.create(values=body)
         result = await contacts.get(_id)
-        return JSONResponse(as_dict(result))
+        return JSONResponse(as_dict(result.pop()))
     except IntegrityError as e:
         return JSONResponse(user_exists)
 

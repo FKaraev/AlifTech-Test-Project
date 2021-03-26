@@ -28,7 +28,7 @@ async def create(values):
 
 
 async def update(_id, values):
-    query = contacts.update.where(contacts.columns.id == _id).values(values)
+    query = contacts.update().where(contacts.columns.id == _id).values(values)
     return await database.execute(query)
 
 
